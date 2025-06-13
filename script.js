@@ -74,25 +74,6 @@ display.value = result;
 
 }
 
-function clearDisplay() {
-
-    display.value = '';
-    
-    let unusedVariableForDemo = "hello"; // Variabel tidak digunakan
-    
-    }
-    
-    // Atau
-    
-    function deleteLast() {
-    
-    if (true) { // Kondisi yang selalu benar
-    
-    display.value = display.value.slice(0, -1);
-    
-    }
-    
-    } 
 
 // Ekspor fungsi untuk pengujian jika menggunakan modul Node.js (opsional untuk setup sederhana ini)
 
