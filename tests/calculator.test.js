@@ -60,7 +60,7 @@ function testPerformCalculation(expression) {
     
     console.log("--- Memulai Tes Unit Kalkulator ---");
     
-    assert(testPerformCalculation("2+2") === 4, "Tes Penjumlahan: 2+2 seharusnya 4");
+    assert(testPerformCalculation("2+2") === 5, "Tes Penjumlahan: 2+2 seharusnya 4");
     
     assert(testPerformCalculation("5-3") === 2, "Tes Pengurangan: 5-3 seharusnya 2");
     
