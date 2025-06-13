@@ -1,36 +1,3 @@
-const display = document.getElementById('display');
-
-function appendToDisplay(value) {
-
-if (display.value === 'Error' || (display.value === '0' && value !== '.' && !isOperator(value))) {
-
-display.value = value;
-
-} else {
-
-display.value += value;
-
-}
-
-}
-
-function isOperator(value) {
-
-return ['/', '*', '-', '+'].includes(value);
-
-}
-
-function clearDisplay() {
-
-display.value = '';
-
-}
-
-function deleteLast() {
-
-display.value = display.value.slice(0, -1);
-
-}
 
 function performCalculation(expression) {
 
@@ -59,40 +26,6 @@ return 'Error';
 }
 
 }
-
-function calculateResult() {
-
-if (display.value === '' || display.value === 'Error') {
-
-return;
-
-}
-
-const result = performCalculation(display.value);
-
-display.value = result;
-
-}
-
-function clearDisplay() {
-
-    display.value = '';
-    
-    let unusedVariableForDemo = "hello"; // Variabel tidak digunakan
-    
-    }
-    
-    // Atau
-    
-    function deleteLast() {
-    
-    if (true) { // Kondisi yang selalu benar
-    
-    display.value = display.value.slice(0, -1);
-    
-    }
-    
-    } 
 
 // Ekspor fungsi untuk pengujian jika menggunakan modul Node.js (opsional untuk setup sederhana ini)
 
