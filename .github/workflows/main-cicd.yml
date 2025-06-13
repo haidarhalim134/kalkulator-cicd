@@ -80,7 +80,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile/Dockerfile
+          file: ./Dockerfile
           push: false # Set 'true' untuk push ke registry
           tags: local/kalkulator-cicd:latest
           # tags: ${{ secrets.DOCKERHUB_USERNAME }}/kalkulator-cicd:latest
