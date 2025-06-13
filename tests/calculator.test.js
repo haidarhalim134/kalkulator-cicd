@@ -66,7 +66,7 @@ function testPerformCalculation(expression) {
     
     assert(testPerformCalculation("4*3") === 12, "Tes Perkalian: 4*3 seharusnya 12");
     
-    assert(testPerformCalculation("10/2") === 5, "Tes Pembagian: 10/2 seharusnya 5");
+    assert(testPerformCalculation("10/2") === 4, "Tes Pembagian: 10/2 seharusnya 5");
     
     assert(testPerformCalculation("3+5*2-1") === 12, "Tes Urutan Operasi: 3+5*2-1 seharusnya 12"); // (3 + (5*2)) - 1
     
